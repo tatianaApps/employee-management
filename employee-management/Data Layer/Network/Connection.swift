@@ -20,6 +20,7 @@ final class Connection {
         
         var urlRequest = URLRequest(url: url, timeoutInterval: 10)
         
+        
         if let params = params {
             guard let paramsData = try? JSONSerialization.data(withJSONObject: params, options: []) else {
                 completion(nil)
@@ -43,13 +44,13 @@ final class Connection {
         let networkTask = urlSession.dataTask(with: urlRequest) {
             data, response, error in
 
-            let httpResponse = response as! HTTPURLResponse
-            print("HTTP Status Code: \(httpResponse.statusCode )")
-            
             guard error == nil else {
                 completion(nil)
                 return
             }
+            
+            let httpResponse = response as! HTTPURLResponse
+            print("HTTP Status Code: \(httpResponse.statusCode )")
             
             completion(data)
         }

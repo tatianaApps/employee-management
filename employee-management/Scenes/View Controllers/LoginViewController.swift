@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     var response: Response?
     var params: [String: Any]?
     var eyeClick = false
+    var httpResponse: HTTPURLResponse?
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
@@ -43,10 +44,16 @@ class LoginViewController: UIViewController {
             print(params)
             DataMapper.shared.login(params: params) {
                 response in
-                //print(response)
+                print(response)
                 
                 if response == nil {
-                    self.alert(message: "Error en la conexión. Inténtelo de nuevo más tarde")
+                    DispatchQueue.main.async {
+                        self.alert(message: "Error en la conexión. Inténtelo de nuevo más tarde")
+                        self.spinnerView.removeFromSuperview()
+                        self.emailTextField.text = ""
+                        self.passTextField.text = ""
+                    }
+                    
                 } else {
                     DispatchQueue.main.async {
                         self.response = response
@@ -69,6 +76,9 @@ class LoginViewController: UIViewController {
                         } else if response?.status == AppData.Error.userDontExist.rawValue {
                             self.alert(message: response!.msg)
                         }
+//                        else if self.httpResponse?.statusCode == 408 {
+//                            self.alert(message: "Error en la conexión. Inténtelo de nuevo más tarde")
+//                        }
                     }
                 }
             }

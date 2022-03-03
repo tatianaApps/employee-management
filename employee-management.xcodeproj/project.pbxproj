@@ -20,6 +20,7 @@
 		412B921027AF05D40057879F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B920F27AF05D40057879F /* ProfileViewController.swift */; };
 		412B921227AF06520057879F /* DetailEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B921127AF06520057879F /* DetailEmployeeVC.swift */; };
 		4158BE1327B2856B0066BD76 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4158BE1227B2856B0066BD76 /* Response.swift */; };
+		416F5EC427D11BA8002267E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416F5EC327D11BA8002267E5 /* Images.xcassets */; };
 		419AA92B27BA555E00F33D22 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419AA92A27BA555E00F33D22 /* Connection.swift */; };
 		419AA92D27BA558200F33D22 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419AA92C27BA558200F33D22 /* DataMapper.swift */; };
 		419AA92F27BA607300F33D22 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419AA92E27BA607200F33D22 /* AppData.swift */; };
@@ -43,6 +44,7 @@
 		412B920F27AF05D40057879F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		412B921127AF06520057879F /* DetailEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEmployeeVC.swift; sourceTree = "<group>"; };
 		4158BE1227B2856B0066BD76 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		416F5EC327D11BA8002267E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		419AA92A27BA555E00F33D22 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		419AA92C27BA558200F33D22 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		419AA92E27BA607200F33D22 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				412B91F827AE98380057879F /* Assets.xcassets */,
 				412B91FA27AE98380057879F /* LaunchScreen.storyboard */,
 				412B91FD27AE98380057879F /* Info.plist */,
+				416F5EC327D11BA8002267E5 /* Images.xcassets */,
 			);
 			path = "employee-management";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412B91FC27AE98380057879F /* LaunchScreen.storyboard in Resources */,
+				416F5EC427D11BA8002267E5 /* Images.xcassets in Resources */,
 				410DBB5727C7AB6200796E48 /* Assets.xcassets in Resources */,
 				412B91F727AE98370057879F /* Main.storyboard in Resources */,
 			);

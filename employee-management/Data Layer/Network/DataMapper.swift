@@ -74,7 +74,7 @@ final class DataMapper {
                 completion(nil)
                 return
             }
-
+            
             do {
                 let decoder = JSONDecoder()
                 let response = try decoder.decode(Response.self, from: data)
